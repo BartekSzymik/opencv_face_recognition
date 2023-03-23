@@ -1,8 +1,8 @@
 from cv2 import cv2
 
 cap = cv2.VideoCapture(0)
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier('venv/lib64/python3.11/site-packages/cv2/data/haarcascade_frontalface_alt.xml')
+eye_cascade = cv2.CascadeClassifier('venv/lib64/python3.11/site-packages/cv2/data/haarcascade_eye_tree_eyeglasses.xml')
 
 while True:
     ret, frame = cap.read()
